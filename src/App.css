@@ -76,9 +76,14 @@
   transition: 0.2s ease-in-out;
 }
 
-.Button:hover {
+.Create-button:hover {
   box-shadow: 0 2px 10px rgba(177, 156, 255);
-  opacity: 90%;
+  background-color: #157ac7; 
+}
+
+.Join-button:hover {
+  box-shadow: 0 2px 10px rgba(177, 156, 255);
+  background-color: #094680;
 }
 
 .Create-button {
