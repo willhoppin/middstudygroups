@@ -5,6 +5,32 @@ function unsupported() {
 }
 
 function App() {
+  var groups = [
+    {
+      "name" : "Economics",
+      "data" : {
+        "department" : "ECON",
+        "number" : "0150",
+        "section" : "D",
+        "name" : "Intro to Macroeconomics",
+        "professor" : "Gavin-Coulombe",
+        "link" : "https://groupme.com/join_group/71168002/AJDO9lBW",
+      }
+    },
+    {
+      "name" : "Economics"
+    },
+    {
+      "name" : "Economics"
+    },
+    {
+      "name" : "Economics"
+    }
+  ]
+  var lines = [];
+  for (var i = 0; i < groups.length; i++) {
+    lines.push(<div>Test</div>);
+  }
   return (
     <div className="App">
       <a href="https://middlebury.edu/" className="Nav" target="_blank" rel="noreferrer">
@@ -35,7 +61,7 @@ function App() {
         </div>
       </div>
       <div className="Tiny-text">
-        Use this site to create or join a Middlebury Study Group - a directory of online Discord chats from ECON0150A to GRMN0475B. Ask questions, schedule study sessions, or work on group projects with fellow students in your classes. No more struggling with homework in isolation!
+        Use this site to create or join a Middlebury Study Group - a directory of online GroupMe chats from ECON0150A to GRMN0475B. Ask questions, schedule study sessions, or work on group projects with fellow students in your classes. No more struggling with homework in isolation!
       </div>
       <div className="Browse">
         Browse Study Groups
@@ -43,6 +69,7 @@ function App() {
       <div className="Browse-subtitle" id="browse">
         All study groups are for the current semester: <span className="Bold">Fall 2021</span>
       </div>
+      <div>{lines}</div>
       <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">
         ©2021 by <span className="Underline">Will Hoppin</span>
       </a>
