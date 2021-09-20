@@ -1,5 +1,9 @@
 import './App.css';
 
+function unsupported() {
+  alert('Sorry, you can\'t create groups because Will hasn\'t programmed it yet! Contact Will at whoppin@middlebury.edu to manually get your study group listed!')
+}
+
 function App() {
   return (
     <div className="App">
@@ -15,15 +19,15 @@ function App() {
             Study Groups
           </div>
           <div className="Main-subtitle">
-            Finally, place to ask all the <span className="Bold">"stupid"</span> questions
+            Finally, a place to ask all of your <span className="Bold">"stupid"</span> questions
           </div>
           <div className="Buttons-wrapper">
-            <a href="https://middlebury.edu/" className="Button Create-button">
+            <div onClick={unsupported} className="Button Create-button">
               Create a Group
-            </a>
-            <a href="https://middlebury.edu/" className="Button Join-button">
+            </div>
+            <div className="Button Join-button" onClick={() => window.location.replace("/#browse")}>
               Join a Group
-            </a>
+            </div>
           </div>
         </div>
         <div className="Right-element">
@@ -32,6 +36,12 @@ function App() {
       </div>
       <div className="Tiny-text">
         Use this site to create or join a Middlebury Study Group - a directory of online Discord chats from ECON0150A to GRMN0475B. Ask questions, schedule study sessions, or work on group projects with fellow students in your classes. No more struggling with homework in isolation!
+      </div>
+      <div className="Browse">
+        Browse Study Groups
+      </div>
+      <div className="Browse-subtitle" id="browse">
+        All study groups are for the current semester: <span className="Bold">Fall 2021</span>
       </div>
       <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">
         ©2021 by <span className="Underline">Will Hoppin</span>

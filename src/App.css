@@ -51,7 +51,7 @@
 }
 
 .Main-subtitle {
-  font-size: 30px;
+  font-size: 27px;
   color: #041A37;
 }
 
@@ -111,4 +111,18 @@
 
 .Underline {
   text-decoration: underline !important;
+}
+
+.Browse {
+  font-size: 45px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 115px;
+}
+
+.Browse-subtitle {
+  font-size: 26px;
+  text-align: left;
+  margin-left: 50px;
+  margin-top: 10px;
 }
