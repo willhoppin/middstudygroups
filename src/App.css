@@ -27,7 +27,7 @@
 .Masthead {
   margin-top: 50px;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
 }
 
 .Left-element {
@@ -39,6 +39,7 @@
 
 .Hero {
   width: 500px;
+  margin-right: 30px;
 }
 
 .Main-title {
@@ -87,6 +88,7 @@
   color: #041A37;
   width: 70%;
   margin: 50px auto auto auto;
+  max-width: 1000px;
 }
 
 .Footer {
