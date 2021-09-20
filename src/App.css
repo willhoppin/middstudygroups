@@ -1,38 +1,81 @@
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
   min-height: 100vh;
+  font-family: novel-pro;
   display: flex;
   flex-direction: column;
+}
+
+.Nav {
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin-top: 35px;
+  text-decoration: none;
+}
+
+.Logo {
+  width: 35px;
+  margin-left: 50px;
+}
+
+.Logo-text {
+  font-size: 30px;
+  color: #09357A;
+  padding: 0 0 7px 10px;
+}
+
+.Masthead {
+  margin-top: 80px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.Left-element {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  margin-left: 50px;
+}
+
+.Hero {
+  width: 500px;
+}
+
+.Main-title {
+  font-size: 90px;
+  color: #041A37;
+  line-height: 90px;
+  margin-bottom: 25px;
+  margin-top: 50px;
+}
+
+.Main-subtitle {
+  font-size: 30px;
+  color: #041A37;
+}
+
+.Bold {
+  font-weight: bold;
+}
+
+.Buttons-wrapper {
+  display: flex;
+  margin-top: 24px;
+}
+
+.Button {
+  padding: 15px 20px;
+  margin: 10px 20px 10px 0;
   color: white;
+  border-radius: 10px;
+  font-size: 20px;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.Create-button {
+  background-color: #0166B3; 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.Join-button {
+  background-color: #003466;
 }
