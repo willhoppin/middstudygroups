@@ -18,10 +18,10 @@ function App() {
             Finally, place to ask all the <span className="Bold">"stupid"</span> questions
           </div>
           <div className="Buttons-wrapper">
-            <a className="Button Create-button">
+            <a href="https://middlebury.edu/" className="Button Create-button">
               Create a Group
             </a>
-            <a className="Button Join-button">
+            <a href="https://middlebury.edu/" className="Button Join-button">
               Join a Group
             </a>
           </div>
@@ -30,6 +30,12 @@ function App() {
           <img className="Hero" src="/hero.jpg" alt=""/>
         </div>
       </div>
+      <div className="Tiny-text">
+        Use this site to create or join a Middlebury Study Group - a directory of online Discord chats from ECON0150A to GRMN0475B. Ask questions, schedule study sessions, or work on group projects with fellow students in your classes. No more struggling with homework in isolation!
+      </div>
+      <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">
+        ©2021 by <span className="Underline">Will Hoppin</span>
+      </a>
     </div>
   );
 }
