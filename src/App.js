@@ -69,6 +69,12 @@ function App() {
       <div className="Browse-subtitle" id="browse">
         All study groups are for the current semester: <span className="Bold">Fall 2021</span>
       </div>
+      <div className="Group-entry">
+        <div>ANTH</div>
+        <div> </div>
+        <div>223</div>
+        <div>A</div>
+      </div>
       <div>{lines}</div>
       <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">
         ©2021 by <span className="Underline">Will Hoppin</span>
