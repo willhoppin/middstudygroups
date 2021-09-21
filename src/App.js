@@ -8,28 +8,41 @@ function App() {
   var groups = [
     {
       "name" : "Economics",
-      "data" : {
-        "department" : "ECON",
-        "number" : "0150",
-        "section" : "D",
+      "classes" : {
         "name" : "Intro to Macroeconomics",
-        "professor" : "Gavin-Coulombe",
-        "link" : "https://groupme.com/join_group/71168002/AJDO9lBW",
+        "data" : {
+          "department" : "ECON",
+          "number" : "0150",
+          "section" : "D",
+          "name" : "Intro to Macroeconomics",
+          "professor" : "Gavin-Coulombe",
+          "link" : "https://groupme.com/join_group/71168002/AJDO9lBW"
+        }
       }
-    },
-    {
-      "name" : "Economics"
-    },
-    {
-      "name" : "Economics"
-    },
-    {
-      "name" : "Economics"
     }
   ]
   var lines = [];
   for (var i = 0; i < groups.length; i++) {
-    lines.push(<div>Test</div>);
+    lines.push(
+      <div className="Group-entry">
+        <div className="Left-half-entry">
+          <div className="Department">{groups[0].classes.data.department}</div>
+          <div>&nbsp;</div>
+          <div>223</div>
+          <div>A</div>
+          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</div>
+          <div className="Italics">Intro to Anthropological Fauna</div>
+          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Prof.&nbsp;</div>
+          <div>E. Glickman</div>
+        </div>
+        <div className="Right-half-entry">
+          <a className="Group-button" href="https://groupme.com/join_group/71168002/AJDO9lBW" target="_blank" rel="noreferrer">
+            <img className="Group-logo" src="/groupmelogo.png" alt=""/>
+            Join Group
+          </a>
+        </div>
+      </div>
+    );
   }
   return (
     <div className="App">
@@ -68,24 +81,6 @@ function App() {
       </div>
       <div className="Browse-subtitle" id="browse">
         All study groups are for the current semester: <span className="Bold">Fall 2021</span>
-      </div>
-      <div className="Group-entry">
-        <div className="Left-half-entry">
-          <div className="Department">ANTH</div>
-          <div>&nbsp;</div>
-          <div>223</div>
-          <div>A</div>
-          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</div>
-          <div className="Italics">Intro to Anthropological Fauna</div>
-          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Prof.&nbsp;</div>
-          <div>E. Glickman</div>
-        </div>
-        <div className="Right-half-entry">
-          <a className="Group-button" href="https://groupme.com/join_group/71168002/AJDO9lBW" target="_blank" rel="noreferrer">
-            <img className="Group-logo" src="/groupmelogo.png" alt=""/>
-            Join Group
-          </a>
-        </div>
       </div>
       <div>{lines}</div>
       <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">
