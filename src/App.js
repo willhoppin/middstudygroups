@@ -70,10 +70,22 @@ function App() {
         All study groups are for the current semester: <span className="Bold">Fall 2021</span>
       </div>
       <div className="Group-entry">
-        <div>ANTH</div>
-        <div> </div>
-        <div>223</div>
-        <div>A</div>
+        <div className="Left-half-entry">
+          <div className="Department">ANTH</div>
+          <div>&nbsp;</div>
+          <div>223</div>
+          <div>A</div>
+          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;</div>
+          <div className="Italics">Intro to Anthropological Fauna</div>
+          <div>&nbsp;&nbsp;&nbsp;•&nbsp;&nbsp;&nbsp;Prof.&nbsp;</div>
+          <div>E. Glickman</div>
+        </div>
+        <div className="Right-half-entry">
+          <a className="Group-button" href="https://groupme.com/join_group/71168002/AJDO9lBW" target="_blank" rel="noreferrer">
+            <img className="Group-logo" src="/groupmelogo.png" alt=""/>
+            Join Group
+          </a>
+        </div>
       </div>
       <div>{lines}</div>
       <a href="https://willhoppin.com" target="_blank" rel="noreferrer" className="Footer">

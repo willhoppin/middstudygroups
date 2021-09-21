@@ -125,12 +125,51 @@
   text-align: left;
   margin-left: 50px;
   margin-top: 10px;
+  margin-bottom: 15px;
 }
 
 .Group-entry {
   margin: 25px 50px;
-  display: flex;
   padding: 15px;
   border-radius: 10px;
+  font-size: 20px;
+  display: flex;
+  justify-content: space-between;
   box-shadow: 0 2px 10px rgba(177, 156, 255);
+  align-items: center;
+
+}
+
+.Left-half-entry {
+  display: flex;
+}
+
+.Department {
+  margin-left: 5px;
+}
+
+.Italics {
+  font-style: italic;
+}
+
+.Group-button {
+  background-color: #00AAE4;
+  font-size: 17px !important;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  transition: 0.2s ease-in-out;
+  text-decoration: none;
+}
+
+.Group-button:hover {
+  background-color: #16b8ee;
+}
+
+.Group-logo {
+  width: 25px;
+  margin-right: 10px;
 }
