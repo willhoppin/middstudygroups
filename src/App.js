@@ -1,10 +1,12 @@
 import './App.css';
+import useMedia from 'use-media';
 
 function unsupported() {
   alert('Sorry, you can\'t create groups because Will hasn\'t programmed it yet! Contact Will at whoppin@middlebury.edu to manually get your study group listed!')
 }
 
 function App() {
+  const isTablet = useMedia({maxWidth: '905px', minWidth: '505px'});
   var groups = [
     {
       "name" : "Economics",
